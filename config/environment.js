@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'print-this-ember-example',
+    modulePrefix: 'ember-print-this-example',
     environment,
     rootURL: '/',
     locationType: 'auto',
