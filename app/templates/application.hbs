@@ -1,5 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="main">
+  <h1 class="md-headline">Ember Print This</h1>
+    
 
-{{outlet}}
+  <header>{{#paper-button href="https://github.com/LucasHill/ember-print-this"}}Github{{/paper-button}}</header> 
+  {{#paper-tabs center=true selected=router.currentRouteName borderBottom=true as |tabs|}}
+    {{#tabs.tab value="index" href=(href-to "index")}}
+      Action
+    {{/tabs.tab}}
+    {{#tabs.tab value="basic-auto" href=(href-to "basic-auto")}}
+      Auto Print
+    {{/tabs.tab}}
+  {{/paper-tabs}}
+
+  {{liquid-outlet class="md-padding"}}
+</div>
+

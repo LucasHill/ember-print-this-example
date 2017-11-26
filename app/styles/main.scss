@@ -1,0 +1,30 @@
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  header, h1 {
+    text-align: center;
+  }
+}
+
+.headline {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+  font-style: italic;
+  // color: contrastColor($primary, '600');
+}
+
+.print-example {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+md-card {
+  min-width: 685px;
+  // min-height: 252px;
+}

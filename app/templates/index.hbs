@@ -1,0 +1,16 @@
+{{#example-code-card snippetName="action-example.hbs" as |text|}}
+  {{#text.headline}}Using an action{{/text.headline}}
+  {{#text.subhead}}Optionally, use an action yielded to the block.{{/text.subhead}}
+{{/example-code-card}}
+
+<div class="print-example">
+  {{#print-this printSelector=".custom-content" as |doPrint|}}
+    <div class="custom-content">
+      <h1 class="md-headline">My cool content</h1>
+      <img src="images/tomster.png" alt="Tomster" title="Tomster">
+    </div>
+
+
+    {{#paper-button raised=true primary=true onClick=doPrint}}Print{{/paper-button}}
+  {{/print-this}}
+</div>

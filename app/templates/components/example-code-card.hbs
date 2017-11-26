@@ -1,0 +1,8 @@
+{{#paper-card as |card|}}
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{yield text}}
+      {{code-snippet name=snippetName}}
+    {{/title.text}}
+  {{/card.title}}
+{{/paper-card}}
