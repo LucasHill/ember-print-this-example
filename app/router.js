@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('basic-auto');
   this.route('custom-selector');
   this.route('custom-options');
+  this.route('service');
 });
 
 export default Router;

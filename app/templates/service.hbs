@@ -1,0 +1,12 @@
+{{#example-code-card snippetName="service-example.hbs" as |text|}}
+  {{#text.headline}}Using the service{{/text.headline}}
+  {{#text.subhead}}The service can be called anywhere rather than using the component{{/text.subhead}}
+  {{code-snippet name="service-controller.js"}}
+{{/example-code-card}}
+
+<div class="print-example">
+    <h1 class="md-headline">My cool content</h1>
+    <img src="images/tomster.png" alt="Tomster" title="Tomster">
+</div>
+
+{{#paper-button raised=true primary=true onClick=(action 'print')}}Print{{/paper-button}}

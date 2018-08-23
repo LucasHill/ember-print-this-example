@@ -6,5 +6,5 @@ export default Controller.extend({
   router: service(),
   currentRouteName: computed('router.currentRouteName', function() {
     return this.get('router.currentRouteName');
-  })
+  }),
 });

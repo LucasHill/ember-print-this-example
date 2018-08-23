@@ -5,8 +5,8 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-print-this-example',
     environment,
-    rootURL: '/',
-    locationType: 'auto',
+    rootURL: '/ember-print-this/',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
